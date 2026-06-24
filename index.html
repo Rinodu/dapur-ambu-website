@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website katalog dan pemesanan kue Dapur Ambu Home Bakery." />
+  <title>Dapur Ambu - Website Katalog & Custom Form</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-cream font-sans text-neutral-800 overflow-x-hidden">
+
+  <nav class="sticky top-0 z-50 bg-cream/95 backdrop-blur-md border-b border-orange-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 py-3 flex justify-between items-center gap-4">
+      <a href="#beranda" class="flex items-center gap-3" aria-label="Kembali ke Beranda">
+        <img src="images/LOGO.png" alt="Logo Dapur Ambu" class="w-16 h-16 sm:w-20 sm:h-20 object-contain" />
+        <div class="hidden sm:block leading-tight">
+          <p class="font-extrabold text-primary text-lg">Dapur Ambu</p>
+          <p class="text-xs text-neutral-500">Home Bakery</p>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center space-x-1 bg-amber-900/5 p-1.5 rounded-full border border-amber-900/10">
+        <a href="#beranda" class="nav-link">Beranda</a>
+        <a href="#produk" class="nav-link">Produk</a>
+        <a href="#cara-pesan" class="nav-link">Cara Pesan</a>
+        <a href="#lokasi" class="nav-link">Lokasi</a>
+      </div>
+
+      <a href="https://script.google.com/macros/s/AKfycbx9nABZm0PaAyODYUvYhPvzyLWP4xoc4-aOrDF-X9s6tOltLjvDFSb5P3Nx9OSscry7/exec"
+         target="_blank" rel="noopener noreferrer"
+         class="btn-primary text-sm sm:text-base px-5 py-2.5 rounded-full">
+        Pesan Sekarang
+      </a>
+    </div>
+
+    <div class="md:hidden px-5 pb-3 flex justify-center gap-2 text-xs overflow-x-auto">
+      <a href="#produk" class="mobile-nav-link">Produk</a>
+      <a href="#cara-pesan" class="mobile-nav-link">Cara Pesan</a>
+      <a href="#lokasi" class="mobile-nav-link">Lokasi</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="beranda" class="max-w-7xl mx-auto px-5 sm:px-6 py-14 lg:py-18 grid md:grid-cols-2 gap-12 items-center min-h-[78vh]">
+      <div data-aos="fade-right" data-aos-duration="900">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-primary leading-tight mb-6">
+          Kue Homemade <br /><span class="text-amber-600">untuk Momen Spesial Anda</span>
+        </h1>
+        <p class="text-lg text-neutral-600 mb-8 max-w-md leading-relaxed">
+          Dapur Ambu menghadirkan kue homemade dengan bahan pilihan, tampilan menarik, dan pemesanan yang lebih mudah melalui form online.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://script.google.com/macros/s/AKfycbx9nABZm0PaAyODYUvYhPvzyLWP4xoc4-aOrDF-X9s6tOltLjvDFSb5P3Nx9OSscry7/exec"
+             target="_blank" rel="noopener noreferrer"
+             class="btn-primary px-8 py-3.5 rounded-xl">
+            Pesan Sekarang
+          </a>
+          <a href="https://instagram.com/dapurambu86" target="_blank" rel="noopener noreferrer" class="btn-outline px-6 py-3.5 rounded-xl">
+            <i class="fa-brands fa-instagram text-lg"></i> Lihat Referensi
+          </a>
+        </div>
+      </div>
+
+      <div data-aos="fade-left" data-aos-duration="900" class="relative flex justify-center">
+        <div class="hero-card">
+          <img src="images/front.png" class="hero-image" alt="Custom cake Dapur Ambu" />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-16 shadow-sm">
+      <div class="max-w-4xl mx-auto px-5 sm:px-6 text-center" data-aos="fade-up">
+        <div class="inline-block bg-amber-50 p-4 rounded-full border border-amber-200 mb-4">
+          <i class="fa-solid fa-cake-candles text-3xl text-amber-700"></i>
+        </div>
+        <h2 class="section-title">Tentang Dapur Ambu</h2>
+        <p class="text-neutral-600 leading-relaxed max-w-2xl mx-auto">
+          Dapur Ambu adalah home bakery yang berfokus pada kualitas rasa dan tampilan kue yang cantik. Sistem katalog dan custom form ini dibuat agar pelanggan lebih mudah melihat produk, mengisi data pesanan, mengunggah referensi desain, dan melakukan konfirmasi melalui WhatsApp.
+        </p>
+      </div>
+    </section>
+
+    <section id="produk" class="max-w-7xl mx-auto px-5 sm:px-6 py-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-primary inline-block border-b-2 border-amber-500 pb-2">Produk & Harga</h2>
+        <p class="text-neutral-500 mt-3">Pilih produk, lalu lanjutkan pemesanan melalui custom form.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <article data-aos="zoom-in" class="product-card">
+          <div class="product-img-wrap"><img src="images/Brownies Custom.jpeg" class="product-image" alt="Brownies Medium" /></div>
+          <div class="product-body">
+            <h3>Brownies Medium</h3>
+            <p>Brownies coklat dengan topping variatif, cocok untuk camilan atau hadiah sederhana.</p>
+          </div>
+          <div class="product-footer"><span>Rp 45.000</span><a href="https://script.google.com/macros/s/AKfycbx9nABZm0PaAyODYUvYhPvzyLWP4xoc4-aOrDF-X9s6tOltLjvDFSb5P3Nx9OSscry7/exec" target="_blank" rel="noopener noreferrer">Pesan</a></div>
+        </article>
+
+        <article data-aos="zoom-in" data-aos-delay="100" class="product-card">
+          <div class="product-img-wrap"><img src="images/Brownies Besar.jpeg" class="product-image" alt="Brownies Besar" /></div>
+          <div class="product-body">
+            <h3>Brownies Besar</h3>
+            <p>Brownies ukuran besar untuk keluarga, acara kecil, atau berbagi bersama teman.</p>
+          </div>
+          <div class="product-footer"><span>Rp 90.000</span><a href="https://script.google.com/macros/s/AKfycbx9nABZm0PaAyODYUvYhPvzyLWP4xoc4-aOrDF-X9s6tOltLjvDFSb5P3Nx9OSscry7/exec" target="_blank" rel="noopener noreferrer">Pesan</a></div>
+        </article>
+
+        <article data-aos="zoom-in" data-aos-delay="200" class="product-card">
+          <div class="product-img-wrap"><img src="images/Cake Bento.jpeg" class="product-image" alt="Cake Bento" /></div>
+          <div class="product-body">
+            <h3>Cake Bento</h3>
+            <p>Cake mini praktis dengan desain lucu, cocok untuk hadiah kejutan.</p>
+          </div>
+          <div class="product-footer"><span>Rp 35.000</span><a href="https://script.google.com/macros/s/AKfycbx9nABZm0PaAyODYUvYhPvzyLWP4xoc4-aOrDF-X9s6tOltLjvDFSb5P3Nx9OSscry7/exec" target="_blank" rel="noopener noreferrer">Pesan</a></div>
+        </article>
+
+        <article data-aos="zoom-in" class="product-card">
+          <div class="product-img-wrap"><img src="images/Cake Sedang.jpeg" class="product-image" alt="Cake Sedang" /></div>
+          <div class="product-body">
+            <h3>Cake Sedang</h3>
+            <p>Cake ukuran sedang untuk perayaan ulang tahun atau acara keluarga kecil.</p>
+          </div>
+          <div class="product-footer"><span>Rp 55.000</span><a href="https://script.google.com/macros/s/AKfycbx9nABZm0PaAyODYUvYhPvzyLWP4xoc4-aOrDF-X9s6tOltLjvDFSb5P3Nx9OSscry7/exec" target="_blank" rel="noopener noreferrer">Pesan</a></div>
+        </article>
+
+        <article data-aos="zoom-in" data-aos-delay="100" class="product-card">
+          <div class="product-img-wrap"><img src="images/Cake Besar .jpeg" class="product-image" alt="Cake Besar" /></div>
+          <div class="product-body">
+            <h3>Cake Besar</h3>
+            <p>Cake ukuran besar untuk pesta, acara keluarga, atau perayaan yang lebih ramai.</p>
+          </div>
+          <div class="product-footer"><span>Rp 120.000</span><a href="https://script.google.com/macros/s/AKfycbx9nABZm0PaAyODYUvYhPvzyLWP4xoc4-aOrDF-X9s6tOltLjvDFSb5P3Nx9OSscry7/exec" target="_blank" rel="noopener noreferrer">Pesan</a></div>
+        </article>
+
+        <article data-aos="zoom-in" data-aos-delay="200" class="product-card">
+          <div class="product-img-wrap"><img src="images/Custom Cake 3D (Hero 2).jpeg" class="product-image" alt="Custom Cake" /></div>
+          <div class="product-body">
+            <h3>Custom Cake</h3>
+            <p>Desain bebas sesuai tema acara. Pelanggan dapat mengunggah gambar referensi melalui form.</p>
+          </div>
+          <div class="product-footer"><span><small>Mulai dari</small>Rp 35.000</span><a href="https://script.google.com/macros/s/AKfycbx9nABZm0PaAyODYUvYhPvzyLWP4xoc4-aOrDF-X9s6tOltLjvDFSb5P3Nx9OSscry7/exec" target="_blank" rel="noopener noreferrer">Pesan</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="cara-pesan" class="bg-white py-20 border-y border-orange-100">
+      <div class="max-w-7xl mx-auto px-5 sm:px-6">
+        <h2 class="text-3xl font-bold text-primary text-center mb-16">Cara Pemesanan</h2>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+          <div class="step-card" data-aos="fade-up"><div>1</div><h4>Pilih Produk</h4><p>Pilih kue dari katalog.</p></div>
+          <div class="step-card" data-aos="fade-up" data-aos-delay="100"><div>2</div><h4>Isi Form</h4><p>Klik tombol Pesan untuk membuka formulir.</p></div>
+          <div class="step-card" data-aos="fade-up" data-aos-delay="200"><div>3</div><h4>Upload Referensi</h4><p>Unggah gambar jika memesan custom cake.</p></div>
+          <div class="step-card" data-aos="fade-up" data-aos-delay="300"><div>4</div><h4>Konfirmasi WA</h4><p>Lanjutkan konfirmasi melalui WhatsApp.</p></div>
+          <div class="step-card" data-aos="fade-up" data-aos-delay="400"><div>5</div><h4>Ambil di Tempat</h4><p>Pesanan diambil sesuai jadwal.</p></div>
+        </div>
+
+        <div data-aos="zoom-in" class="mt-16 max-w-2xl mx-auto bg-amber-50/70 border border-amber-200 rounded-2xl p-6 flex items-start gap-4">
+          <i class="fa-solid fa-triangle-exclamation text-amber-600 text-2xl mt-1"></i>
+          <div>
+            <h5 class="font-bold text-amber-900 mb-2">Ketentuan Penting</h5>
+            <ul class="list-disc list-inside text-sm text-amber-800 space-y-1">
+              <li>Pesanan diambil di tempat sesuai jadwal yang telah dikonfirmasi.</li>
+              <li>Harga custom menyesuaikan ukuran dan tingkat kesulitan desain.</li>
+              <li>Admin akan melakukan konfirmasi akhir melalui WhatsApp setelah form dikirim.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lokasi" class="max-w-7xl mx-auto px-5 sm:px-6 py-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right">
+          <h3 class="text-2xl font-bold text-primary mb-4">Lokasi Dapur Ambu</h3>
+          <p class="text-neutral-600 flex items-start gap-2 mb-6">
+            <i class="fa-solid fa-map-marker-alt text-amber-700 mt-1"></i>
+            <span>Dapur Ambu Home Bakery<br />Jl. Raya Parung Panjang No.75, Caringin, Kec. Legok, Kabupaten Tangerang, Banten 15820</span>
+          </p>
+          <a href="https://maps.google.com/?q=Dapur+Ambu+Jl.+Raya+Parung+Panjang+No.75+Legok+Tangerang" target="_blank" rel="noopener noreferrer" class="btn-outline px-5 py-2.5 rounded-xl">
+            <i class="fa-solid fa-location-arrow"></i> Lihat Google Maps
+          </a>
+        </div>
+        <div data-aos="fade-left" class="w-full aspect-[16/9] bg-neutral-200 rounded-2xl border border-neutral-300 overflow-hidden shadow-md">
+          <iframe src="https://maps.google.com/maps?q=Dapur%20Ambu%20Jl.%20Raya%20Parung%20Panjang%20No.75%20Caringin%20Legok%20Tangerang&t=&z=15&ie=UTF8&iwloc=&output=embed" class="w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-amber-50/50 py-16 text-center border-t border-orange-100">
+      <div data-aos="zoom-in" class="px-5">
+        <h3 class="text-2xl md:text-3xl font-extrabold text-primary mb-6">Siap memesan kue untuk momen spesial Anda?</h3>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="https://script.google.com/macros/s/AKfycbx9nABZm0PaAyODYUvYhPvzyLWP4xoc4-aOrDF-X9s6tOltLjvDFSb5P3Nx9OSscry7/exec" target="_blank" rel="noopener noreferrer" class="btn-primary px-8 py-3.5 rounded-xl">Pesan Sekarang</a>
+          <a href="https://instagram.com/dapurambu86" target="_blank" rel="noopener noreferrer" class="btn-outline px-6 py-3.5 rounded-xl"><i class="fa-brands fa-instagram text-lg"></i> Lihat Referensi</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-neutral-900 text-neutral-400 py-12 px-5 sm:px-6 border-t border-neutral-800">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="flex flex-wrap justify-center items-center gap-5">
+        <a href="https://instagram.com/dapurambu86" target="_blank" rel="noopener noreferrer" class="hover:text-white flex items-center gap-2 transition text-sm"><i class="fa-brands fa-instagram text-lg text-pink-500"></i> @dapurambu86</a>
+        <a href="https://wa.me/6281210028857" target="_blank" rel="noopener noreferrer" class="hover:text-white flex items-center gap-2 transition text-sm"><i class="fa-brands fa-whatsapp text-lg text-green-500"></i> 0812-1002-8857</a>
+      </div>
+      <p class="text-sm text-center md:text-right">© 2026 Dapur Ambu. Website katalog dan custom form pemesanan.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 800 });
+  </script>
+</body>
+</html>
