@@ -22,6 +22,9 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 
   <script type="application/ld+json">
@@ -50,7 +53,7 @@
       <a href="#beranda" class="flex items-center gap-3" aria-label="Kembali ke Beranda">
         <img src="images/LOGO.png" alt="Logo Dapur Ambu" class="w-16 h-16 sm:w-20 sm:h-20 object-contain" />
         <div class="hidden sm:block leading-tight">
-          <p class="font-extrabold text-primary text-lg">Dapur Ambu</p>
+          <p class="font-display font-extrabold text-primary text-lg">Dapur Ambu</p>
           <p class="text-xs text-neutral-500">Home Bakery</p>
         </div>
       </a>
@@ -79,7 +82,8 @@
   <main>
     <section id="beranda" class="max-w-7xl mx-auto px-5 sm:px-6 py-14 lg:py-18 grid md:grid-cols-2 gap-12 items-center min-h-[78vh]">
       <div data-aos="fade-right" data-aos-duration="900">
-        <h1 class="text-4xl md:text-6xl font-extrabold text-primary leading-tight mb-6">
+        <span class="badge mb-5"><i class="fa-solid fa-leaf text-amber-600 mr-1.5"></i> 100% Homemade, Tanpa Pengawet</span>
+        <h1 class="font-display text-4xl md:text-6xl font-extrabold text-primary leading-tight mb-6 mt-4">
           Kue Homemade <br /><span class="text-amber-600">untuk Momen Spesial Anda</span>
         </h1>
         <p class="text-lg text-neutral-600 mb-8 max-w-md leading-relaxed">
@@ -98,13 +102,25 @@
       </div>
 
       <div data-aos="fade-left" data-aos-duration="900" class="relative flex justify-center">
+        <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+        <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
         <div class="hero-card">
           <img src="images/front.jpg" class="hero-image" alt="Custom cake Dapur Ambu" />
+        </div>
+        <div class="hero-rating-badge">
+          <i class="fa-solid fa-star text-amber-400"></i>
+          <div class="leading-tight">
+            <p class="font-extrabold text-primary text-sm">4.9 / 5.0</p>
+            <p class="text-[.68rem] text-neutral-500">200+ Pesanan</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-white py-16 shadow-sm">
+    <section class="bg-white py-16 shadow-sm relative">
+      <div class="wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#ffffff" d="M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,58.7C672,53,768,43,864,42.7C960,43,1056,53,1152,58.7C1248,64,1344,64,1392,64L1440,64L1440,60L0,60Z"></path></svg>
+      </div>
       <div class="max-w-4xl mx-auto px-5 sm:px-6 text-center" data-aos="fade-up">
         <div class="inline-block bg-amber-50 p-4 rounded-full border border-amber-200 mb-4">
           <i class="fa-solid fa-cake-candles text-3xl text-amber-700"></i>
@@ -118,7 +134,7 @@
 
     <section id="produk" class="max-w-7xl mx-auto px-5 sm:px-6 py-20">
       <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold text-primary inline-block border-b-2 border-amber-500 pb-2">Produk & Harga</h2>
+        <h2 class="font-display text-3xl font-bold text-primary inline-block border-b-2 border-amber-500 pb-2">Produk & Harga</h2>
         <p class="text-neutral-500 mt-3">Pilih produk, lalu lanjutkan pemesanan melalui custom form.</p>
       </div>
 
@@ -160,7 +176,7 @@
         </article>
 
         <article data-aos="zoom-in" data-aos-delay="100" class="product-card">
-          <div class="product-img-wrap"><img src="images/Cake Besar.jpeg" class="product-image" alt="Cake Besar" loading="lazy" /></div>
+          <div class="product-img-wrap"><span class="ribbon">Favorit</span><img src="images/Cake Besar.jpeg" class="product-image" alt="Cake Besar" loading="lazy" /></div>
           <div class="product-body">
             <h3>Cake Besar</h3>
             <p>Cake ukuran besar untuk pesta, acara keluarga, atau perayaan yang lebih ramai.</p>
@@ -169,7 +185,7 @@
         </article>
 
         <article data-aos="zoom-in" data-aos-delay="200" class="product-card">
-          <div class="product-img-wrap"><img src="images/Custom Cake 3D (Hero 2).jpeg" class="product-image" alt="Custom Cake" loading="lazy" /></div>
+          <div class="product-img-wrap"><span class="ribbon">Favorit</span><img src="images/Custom Cake 3D (Hero 2).jpeg" class="product-image" alt="Custom Cake" loading="lazy" /></div>
           <div class="product-body">
             <h3>Custom Cake</h3>
             <p>Desain bebas sesuai tema acara. Pelanggan dapat mengunggah gambar referensi melalui form.</p>
@@ -179,9 +195,9 @@
       </div>
     </section>
 
-    <section id="cara-pesan" class="bg-white py-20 border-y border-orange-100">
+    <section id="cara-pesan" class="bg-white py-20 border-t border-orange-100">
       <div class="max-w-7xl mx-auto px-5 sm:px-6">
-        <h2 class="text-3xl font-bold text-primary text-center mb-16">Cara Pemesanan</h2>
+        <h2 class="font-display text-3xl font-bold text-primary text-center mb-16">Cara Pemesanan</h2>
         <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div class="step-card" data-aos="fade-up"><div>1</div><h4>Pilih Produk</h4><p>Pilih kue dari katalog.</p></div>
           <div class="step-card" data-aos="fade-up" data-aos-delay="100"><div>2</div><h4>Isi Form</h4><p>Klik tombol Pesan untuk membuka formulir.</p></div>
@@ -204,10 +220,13 @@
       </div>
     </section>
 
-    <section id="lokasi" class="max-w-7xl mx-auto px-5 sm:px-6 py-20">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
+    <section id="lokasi" class="bg-cream relative max-w-none px-0 py-20">
+      <div class="wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#FAF6F0" d="M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,58.7C672,53,768,43,864,42.7C960,43,1056,53,1152,58.7C1248,64,1344,64,1392,64L1440,64L1440,60L0,60Z"></path></svg>
+      </div>
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 grid md:grid-cols-2 gap-12 items-center">
         <div data-aos="fade-right">
-          <h3 class="text-2xl font-bold text-primary mb-4">Lokasi Dapur Ambu</h3>
+          <h3 class="font-display text-2xl font-bold text-primary mb-4">Lokasi Dapur Ambu</h3>
           <p class="text-neutral-600 flex items-start gap-2 mb-6">
             <i class="fa-solid fa-map-marker-alt text-amber-700 mt-1"></i>
             <span>Dapur Ambu Home Bakery<br />Jl. Raya Parung Panjang No.75, Caringin, Kec. Legok, Kabupaten Tangerang, Banten 15820</span>
