@@ -281,3 +281,9 @@ body {
   .product-img-wrap { height: 13rem; }
   .hero-card { max-width: 24rem; }
 }
+
+.scroll-row {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scroll-row::-webkit-scrollbar { display: none; }

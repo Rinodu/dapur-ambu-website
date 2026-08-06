@@ -81,7 +81,7 @@
 
   <main>
     <section id="beranda" class="max-w-7xl mx-auto px-5 sm:px-6 py-14 lg:py-18 grid md:grid-cols-2 gap-12 items-center min-h-[78vh]">
-      <div data-aos="fade-right" data-aos-duration="900">
+      <div data-aos="fade-right" data-aos-duration="900" class="order-2 md:order-1">
         <span class="badge mb-5"><i class="fa-solid fa-leaf text-amber-600 mr-1.5"></i> 100% Homemade, Tanpa Pengawet</span>
         <h1 class="font-display text-4xl md:text-6xl font-extrabold text-primary leading-tight mb-6 mt-4">
           Kue Homemade <br /><span class="text-amber-600">untuk Momen Spesial Anda</span>
@@ -101,7 +101,7 @@
         </div>
       </div>
 
-      <div data-aos="fade-left" data-aos-duration="900" class="relative flex justify-center">
+      <div data-aos="fade-left" data-aos-duration="900" class="order-1 md:order-2 relative flex justify-center">
         <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
         <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
         <div class="hero-card">
@@ -136,10 +136,11 @@
       <div class="text-center mb-12">
         <h2 class="font-display text-3xl font-bold text-primary inline-block border-b-2 border-amber-500 pb-2">Produk & Harga</h2>
         <p class="text-neutral-500 mt-3">Pilih produk, lalu lanjutkan pemesanan melalui custom form.</p>
+        <p class="md:hidden text-xs text-amber-700 font-bold mt-3"><i class="fa-solid fa-arrow-left-long"></i> Geser untuk lihat produk lain <i class="fa-solid fa-arrow-right-long"></i></p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <article data-aos="zoom-in" class="product-card">
+      <div class="scroll-row flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory -mx-5 px-5 md:mx-0 md:px-0 pb-4 md:pb-0">
+        <article data-aos="zoom-in" class="product-card shrink-0 w-[76%] sm:w-[46%] md:w-auto snap-center">
           <div class="product-img-wrap"><img src="images/Brownies Custom.jpeg" class="product-image" alt="Brownies Medium" loading="lazy" /></div>
           <div class="product-body">
             <h3>Brownies Medium</h3>
@@ -148,7 +149,7 @@
           <div class="product-footer"><span>Rp 45.000</span><a href="https://script.google.com/macros/s/AKfycbx9nABZm0PaAyODYUvYhPvzyLWP4xoc4-aOrDF-X9s6tOltLjvDFSb5P3Nx9OSscry7/exec" class="order-link" target="_blank" rel="noopener noreferrer">Pesan</a></div>
         </article>
 
-        <article data-aos="zoom-in" data-aos-delay="100" class="product-card">
+        <article data-aos="zoom-in" data-aos-delay="100" class="product-card shrink-0 w-[76%] sm:w-[46%] md:w-auto snap-center">
           <div class="product-img-wrap"><img src="images/Brownies Besar.jpeg" class="product-image" alt="Brownies Besar" loading="lazy" /></div>
           <div class="product-body">
             <h3>Brownies Besar</h3>
@@ -157,7 +158,7 @@
           <div class="product-footer"><span>Rp 90.000</span><a href="https://script.google.com/macros/s/AKfycbx9nABZm0PaAyODYUvYhPvzyLWP4xoc4-aOrDF-X9s6tOltLjvDFSb5P3Nx9OSscry7/exec" class="order-link" target="_blank" rel="noopener noreferrer">Pesan</a></div>
         </article>
 
-        <article data-aos="zoom-in" data-aos-delay="200" class="product-card">
+        <article data-aos="zoom-in" data-aos-delay="200" class="product-card shrink-0 w-[76%] sm:w-[46%] md:w-auto snap-center">
           <div class="product-img-wrap"><img src="images/Cake Bento.jpeg" class="product-image" alt="Cake Bento" loading="lazy" /></div>
           <div class="product-body">
             <h3>Cake Bento</h3>
@@ -166,7 +167,7 @@
           <div class="product-footer"><span>Rp 35.000</span><a href="https://script.google.com/macros/s/AKfycbx9nABZm0PaAyODYUvYhPvzyLWP4xoc4-aOrDF-X9s6tOltLjvDFSb5P3Nx9OSscry7/exec" class="order-link" target="_blank" rel="noopener noreferrer">Pesan</a></div>
         </article>
 
-        <article data-aos="zoom-in" class="product-card">
+        <article data-aos="zoom-in" class="product-card shrink-0 w-[76%] sm:w-[46%] md:w-auto snap-center">
           <div class="product-img-wrap"><img src="images/Cake Sedang.jpeg" class="product-image" alt="Cake Sedang" loading="lazy" /></div>
           <div class="product-body">
             <h3>Cake Sedang</h3>
@@ -175,7 +176,7 @@
           <div class="product-footer"><span>Rp 55.000</span><a href="https://script.google.com/macros/s/AKfycbx9nABZm0PaAyODYUvYhPvzyLWP4xoc4-aOrDF-X9s6tOltLjvDFSb5P3Nx9OSscry7/exec" class="order-link" target="_blank" rel="noopener noreferrer">Pesan</a></div>
         </article>
 
-        <article data-aos="zoom-in" data-aos-delay="100" class="product-card">
+        <article data-aos="zoom-in" data-aos-delay="100" class="product-card shrink-0 w-[76%] sm:w-[46%] md:w-auto snap-center">
           <div class="product-img-wrap"><span class="ribbon">Favorit</span><img src="images/Cake Besar.jpeg" class="product-image" alt="Cake Besar" loading="lazy" /></div>
           <div class="product-body">
             <h3>Cake Besar</h3>
@@ -184,7 +185,7 @@
           <div class="product-footer"><span>Rp 120.000</span><a href="https://script.google.com/macros/s/AKfycbx9nABZm0PaAyODYUvYhPvzyLWP4xoc4-aOrDF-X9s6tOltLjvDFSb5P3Nx9OSscry7/exec" class="order-link" target="_blank" rel="noopener noreferrer">Pesan</a></div>
         </article>
 
-        <article data-aos="zoom-in" data-aos-delay="200" class="product-card">
+        <article data-aos="zoom-in" data-aos-delay="200" class="product-card shrink-0 w-[76%] sm:w-[46%] md:w-auto snap-center">
           <div class="product-img-wrap"><span class="ribbon">Favorit</span><img src="images/Custom Cake 3D (Hero 2).jpeg" class="product-image" alt="Custom Cake" loading="lazy" /></div>
           <div class="product-body">
             <h3>Custom Cake</h3>
@@ -197,13 +198,14 @@
 
     <section id="cara-pesan" class="bg-white py-20 border-t border-orange-100">
       <div class="max-w-7xl mx-auto px-5 sm:px-6">
-        <h2 class="font-display text-3xl font-bold text-primary text-center mb-16">Cara Pemesanan</h2>
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
-          <div class="step-card" data-aos="fade-up"><div>1</div><h4>Pilih Produk</h4><p>Pilih kue dari katalog.</p></div>
-          <div class="step-card" data-aos="fade-up" data-aos-delay="100"><div>2</div><h4>Isi Form</h4><p>Klik tombol Pesan untuk membuka formulir.</p></div>
-          <div class="step-card" data-aos="fade-up" data-aos-delay="200"><div>3</div><h4>Upload Referensi</h4><p>Unggah gambar jika memesan custom cake.</p></div>
-          <div class="step-card" data-aos="fade-up" data-aos-delay="300"><div>4</div><h4>Konfirmasi WA</h4><p>Lanjutkan konfirmasi melalui WhatsApp.</p></div>
-          <div class="step-card" data-aos="fade-up" data-aos-delay="400"><div>5</div><h4>Ambil di Tempat</h4><p>Pesanan diambil sesuai jadwal.</p></div>
+        <h2 class="font-display text-3xl font-bold text-primary text-center mb-3 md:mb-16">Cara Pemesanan</h2>
+        <p class="md:hidden text-xs text-amber-700 font-bold text-center mb-8"><i class="fa-solid fa-arrow-left-long"></i> Geser untuk lihat langkah lain <i class="fa-solid fa-arrow-right-long"></i></p>
+        <div class="scroll-row flex md:grid md:grid-cols-5 gap-6 md:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory -mx-5 px-5 md:mx-0 md:px-0 pb-4 md:pb-0">
+          <div class="step-card shrink-0 w-[42%] sm:w-[30%] md:w-auto snap-center" data-aos="fade-up"><div>1</div><h4>Pilih Produk</h4><p>Pilih kue dari katalog.</p></div>
+          <div class="step-card shrink-0 w-[42%] sm:w-[30%] md:w-auto snap-center" data-aos="fade-up" data-aos-delay="100"><div>2</div><h4>Isi Form</h4><p>Klik tombol Pesan untuk membuka formulir.</p></div>
+          <div class="step-card shrink-0 w-[42%] sm:w-[30%] md:w-auto snap-center" data-aos="fade-up" data-aos-delay="200"><div>3</div><h4>Upload Referensi</h4><p>Unggah gambar jika memesan custom cake.</p></div>
+          <div class="step-card shrink-0 w-[42%] sm:w-[30%] md:w-auto snap-center" data-aos="fade-up" data-aos-delay="300"><div>4</div><h4>Konfirmasi WA</h4><p>Lanjutkan konfirmasi melalui WhatsApp.</p></div>
+          <div class="step-card shrink-0 w-[42%] sm:w-[30%] md:w-auto snap-center" data-aos="fade-up" data-aos-delay="400"><div>5</div><h4>Ambil di Tempat</h4><p>Pesanan diambil sesuai jadwal.</p></div>
         </div>
 
         <div data-aos="zoom-in" class="mt-16 max-w-2xl mx-auto bg-amber-50/70 border border-amber-200 rounded-2xl p-6 flex items-start gap-4">
